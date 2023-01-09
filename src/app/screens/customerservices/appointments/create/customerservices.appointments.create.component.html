@@ -1,0 +1,231 @@
+<!-- <div class="container mb-auto">
+    <div class="row mt-3">
+        <div class="col-lg-12">
+            <h5>Appointment Detail</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+           
+        </div>
+    </div>  
+</div> -->
+
+
+<div class="card border">
+    <div class="card-header bg-transparent border-bottom d-flex justify-content-between align-items-center p-3">
+        <div class="d-flex align-items-center">
+            <h6>Appointment</h6>
+        </div>
+    </div>
+    <div class="card-body">
+        <form #appointmentForm="ngForm" (ngSubmit)="CreateAppointment()" novalidate>
+
+
+
+            <app-progress>
+                   <app-progress-step>
+                      <div class="card">
+                        <div class="card-text"><h6>Service Detail</h6></div>
+                        <div class="card-body">
+                        <div class="container">
+                            <div class="row mb-2">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label w-100">Service <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                        <select class="form-select form-select-sm" id="serviceTypeID" name="serviceTypeID"  (change)="onServiceTypeChange($event);" [(ngModel)]="appointment.booking.serviceTypeID" #serviceTypeID="ngModel" required >
+                                            <option value="">--- Select Service ---</option>
+                                             <option *ngFor="let item of ServiceTypeList" [value]="item.serviceTypeID">{{item.serviceTypeNameEN}}</option>
+                                        </select>
+                                    </div>
+                                    <div *ngIf="serviceTypeID.invalid && (branchID.dirty || serviceTypeID.touched)" class="text-danger">
+                                      
+                                            <div *ngIf="serviceTypeID.errors?.['required']">
+                                                Service is required.
+                                              </div>
+                                    </div>
+                                    </div>
+                                </div>                                    
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-lg-6">
+                                   <ul class="list-unstyled">
+                                    <li><strong>Select Service Types</strong></li>
+                                    <li *ngFor="let item of ServiceDetails"><div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input chkServiceDetails" role="switch" [id]="'chk_'+item.serviceDetailID" name="'chk_'+item.serviceDetailID" [value]="item.serviceDetailID" />
+                                        <label class="form-check-label" [htmlFor]="'chk_'+item.serviceDetailID"><span class="ms-2">{{item.serviceDetailNameEN}}</span></label>
+                                    </div></li>
+                                   </ul>
+                                </div>                                    
+                            </div>
+                            <div class="row  mt-2">
+                                <div class="col-lg-12">
+                                  <div class="d-flex float-end">
+                                    <button type="button" progressStepNext class="btn btn-md btn-primary-soft" [disabled]="!serviceTypeID.valid">Next</button>
+                                  </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        </div>
+                      </div>
+                      
+                   </app-progress-step>
+                   <app-progress-step>
+    
+                    <div class="card">
+                        <div class="card-text">Pet Detail</div>
+                        <div class="card-body">
+                        <div class="container">
+
+
+                           <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label w-100">Branch <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                    <select class="form-select form-select-sm" id="branchID" name="branchID" [(ngModel)]="appointment.booking.branchID" (change)="onBranchSelect($event);" #branchID="ngModel" required >
+                                            <option *ngFor="let item of BranchList" [value]="item.branchID">{{item.branchNameEN}}</option>
+                                    </select>
+                                </div>
+                                <div  *ngIf="branchID.invalid && (branchID.dirty || branchID.touched)" class="text-danger">
+                                  
+                                        <div *ngIf="branchID.errors?.['required']">
+                                            Branch is required.
+                                          </div>
+                                   
+                                </div>
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label w-100">Pet</label>
+                                    <div class="input-group">
+                                    <select class="form-select form-select-sm" id="customerPetID" name="customerPetID" [(ngModel)]="appointment.booking.customerPetID" #customerPetID="ngModel">
+                                        <option *ngFor="let item of PetDetailList" [value]="item.customerPetID">{{item.petName}}</option>
+                                    </select>
+                                </div>
+                                </div>
+                            </div>
+                           </div>
+
+
+                            <div class="row  mt-2">
+                                <div class="col-lg-12">
+                                  <div class="d-flex float-end">
+                                    <button type="button" progressStepPrev class="btn btn-md btn-secondary-soft me-1">Previous</button>
+                                    <button type="button" progressStepNext class="btn btn-md btn-primary-soft" [disabled]="!branchID.valid">Next</button>
+                                  </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        </div>
+                      </div>
+    
+                    
+                 </app-progress-step>
+                 <app-progress-step>
+                    <div class="card">
+                        <div class="card-text">Schedule</div>
+                        <div class="card-body">
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="form-label w-100">Schedule Date <span class="text-danger">*</span></label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-sm" id="scheduleDate" name="scheduleDate" bsDatepicker [bsConfig]="datePickerConfig" [(ngModel)]="schedule.scheduleDate" #scheduleDate="ngModel" (bsValueChange)="onBranchSchedule($event)" required autocomplete="off" />
+                                        </div>
+                                        <div *ngIf="scheduleDate.invalid && (scheduleDate.dirty || scheduleDate.touched)" class="text-danger">                                              
+                                            <div *ngIf="scheduleDate.errors?.['required']">
+                                                Schedule date is required.
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <input type="hidden" id="appointmentDate" name="appointmentDate" [(ngModel)]="appointment.booking.appointmentDate" required >
+                                <button type="button" *ngFor="let item of BranchScheduleList" [id]="'id_' + item.branchScheduleID" [name]="'id_' + item.branchScheduleID" class="btn btn-sm btn-info-soft col col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 ms-2 btnSlot" (click)="onSelectSlot($event);" [value]="item.start_Time" [disabled]="!item.isAvailable" >{{item.start_Time | date:'hh:mm a'}}</button>
+
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-lg-12">
+                                  <div class="d-flex float-end">
+                                    <button type="button" progressStepPrev class="btn btn-md btn-secondary-soft me-1">Previous</button>
+                                    <button type="button" progressStepNext class="btn btn-md btn-primary-soft" (click)="onFinalizeSchedule();"  [disabled]="!appointmentForm.valid" >Next</button>
+                                  </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        </div>
+                      </div>
+                 </app-progress-step>
+                 <app-progress-step class="complete">
+                    <div class="card">
+                        <div class="card-text">Appointment Detail</div>
+                        <div class="card-body">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                               <div class="col-lg-3">
+                                <label><strong>Service</strong></label>
+                               </div>
+                               <div class="col-lg-6">{{selectedServiceTypeNameText}}</div> 
+                            </div>
+                            <div class="row mt-2 justify-content-center">
+                                <div class="col-lg-3">
+                                 <label>&nbsp;</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="flex-column">
+                                        <li *ngFor="let item of selectedServiceDetails">{{item?.serviceDetailNameEN}}</li>
+                                    </ul>
+                                </div> 
+                             </div>
+                             <div class="row mt-2 justify-content-center">
+                                <div class="col-lg-3">
+                                 <label>Branch</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <span>{{selectedBranchNameText}}</span>
+                                </div> 
+                             </div>
+                             <div class="row mt-2 justify-content-center">
+                                <div class="col-lg-3">
+                                 <label>Pet Detail</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <span>{{selectedCustomerPetNameText}}</span>
+                                </div> 
+                             </div>
+                             <div class="row mt-2 justify-content-center">
+                                <div class="col-lg-3">
+                                 <label>Appointment Date</label>
+                                </div>
+                                <div class="col-lg-6">
+                                    <span>{{selectedSlotDate | date:'dd/MM/yyyy hh:mm a'}}</span>
+                                </div> 
+                             </div>
+                            <div class="row  mt-2">
+                                <div class="col-lg-12">
+                                  <div class="d-flex float-end">
+                                    <button type="button" progressStepPrev class="btn btn-md btn-secondary-soft me-1">Previous</button>
+                                    <button type="submit" progressStepNext class="btn btn-md btn-success-soft" [disabled]="!appointmentForm.valid">Finish</button>
+                                  </div>
+                                </div>
+                            </div>                        
+                        </div>
+                        </div>
+                      </div>
+                 </app-progress-step>
+            </app-progress> 
+     </form>
+    </div>
+</div>

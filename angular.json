@@ -1,0 +1,152 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "APClinicApp": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apclinic-app",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/assets/ng-includes/css/customStyle1.css",
+              "src/assets/ng-includes/css/customStyle2.css",
+              "src/assets/ng-includes/css/customStyle3.css",
+              "src/assets/ng-includes/css/customStyle4.css",
+              "src/assets/ng-includes/css/customStyle5.css",
+              "src/assets/ng-includes/css/customStyle6.css",
+              "src/assets/ng-includes/css/customStyle7.css",
+              "src/assets/ng-includes/css/customStyle8.css",
+              "src/assets/ng-includes/css/customStyle9.css",
+              "src/assets/ng-includes/css/customStyle10.css",
+              "src/assets/ng-includes/css/customStyle11.css",
+              "src/assets/ng-includes/css/customStyle12.css",
+              "src/assets/ng-includes/css/customStyle13.css",
+              "src/assets/ng-includes/css/customStyle14.css",
+              "src/assets/ng-includes/css/customStyle15.css",
+              "src/assets/ng-includes/css/customStyle16.css",
+              "src/assets/ng-includes/css/customStyle17.css",
+              "src/assets/ng-includes/css/customStyle18.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/ng-includes/css/dist/block-library/style.min.css",
+              "src/assets/ng-includes/css/classic-themes.min.css",
+              "src/assets/ng-content/plugins/bold-page-builder/css/front_end/content_elements.crush.css",
+              "src/assets/ng-content/plugins/bold-page-builder/slick/slick.css",
+              "src/assets/ng-content/plugins/bold-timeline/style.css",
+              "src/assets/ng-content/plugins/bt_cost_caculator/style.min.css",
+              "src/assets/ng-content/plugins/contact-form-7/css/styles.css",
+              "src/assets/ng-content/themes/pawsitive/style.css",
+              "src/assets/ng-includes/styles.css",
+              "src/assets/ng-content/themes/pawsitive/framework/css/style.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/ag-grid-community/styles/ag-grid.css",
+              "node_modules/ag-grid-community/styles/ag-theme-alpine.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "src/assets/ng-includes/js/jquery/jquery.min.js",
+              "src/assets/ng-includes/js/jquery/jquery-migrate.min.js",          
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "src/assets/ng-includes/js/customStyle.js",
+              "src/assets/ng-content/plugins/bold-page-builder/slick/slick.min.js",
+              "src/assets/ng-content/plugins/bold-page-builder/content_elements_misc/js/jquery.magnific-popup.min.js",
+              "src/assets/ng-content/plugins/bold-page-builder/content_elements_misc/js/content_elements.js",
+              "src/assets/ng-content/plugins/bold-timeline/assets/js/bold-timeline.js",
+              "src/assets/ng-content/plugins/bt_cost_caculator/jquery.dd.js",
+              "src/assets/ng-content/plugins/bt_cost_caculator/cc.main.js",
+              "src/assets/ng-content/themes/pawsitive/framework/js/header.misc.js",
+              "src/assets/ng-content/themes/pawsitive/framework/js/fancySelect.js",
+              "src/assets/ng-content/themes/pawsitive/framework/js/misc.js",
+              "src/assets/ng-content/plugins/bold-page-builder/content_elements/bt_bb_section/bt_bb_elements.js",
+              "src/assets/ng-content/themes/pawsitive/bold-page-builder/content_elements/bt_bb_floating_image/bt_bb_floating_image.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "20kb",
+                  "maximumError": "40kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "APClinicApp:build:production"
+            },
+            "development": {
+              "browserTarget": "APClinicApp:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "APClinicApp:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "63a7aa57-bece-4411-9f45-33d925e803c6"
+  }
+}

@@ -1,0 +1,75 @@
+.btBelowMenu.btTransparentLightHeader .mainOtherHeader {
+    background-color: transparent;
+}
+.btTransparentLightHeader .mainOtherHeader {
+    color: #181818;
+}
+.btMenuInitFinished .mainOtherHeader {
+    visibility: initial;
+    opacity: 1;
+}
+.mainOtherHeader {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.mainOtherHeader {
+    width: 100%;
+    position: absolute;
+    /* background-color: inherit; */
+    transform: translateY(0);
+    font-family: "Nunito Sans",Arial,Helvetica,sans-serif;
+    transition: opacity 300ms ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.mainOtherHeader, .btVerticalHeaderTop {
+    z-index: 10002;
+}
+
+
+.btHasAltLogo.btStickyHeaderActive.btMenuHorizontal.btTransparentLightHeader .mainOtherHeader {
+    color: #181818;
+    background-color: #fff;
+}
+
+.btMenuHorizontal.btStickyHeaderActive.btStickyHeaderOpen .mainOtherHeader {
+    transition: transform 200ms ease;
+    transform: translateY(0);
+}
+.btStickyHeaderActive.btBelowMenu.btTransparentLightHeader .mainOtherHeader {
+    background-color: #191919;
+}
+.btStickyHeaderActive.btMenuHorizontal .mainOtherHeader {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    transform: translateY(-100%);
+}
+.btStickyHeaderActive.btTransparentLightHeader .mainOtherHeader {
+    background-color: #191919;
+}
+.btBelowMenu.btTransparentLightHeader .mainOtherHeader {
+    background-color: transparent;
+}
+.btTransparentLightHeader .mainOtherHeader {
+    color: #181818;
+}
+.btMenuInitFinished .mainOtherHeader {
+    visibility: initial;
+    opacity: 1;
+}
+.mainOtherHeader {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+.mainOtherHeader {
+    width: 100%;
+    position: absolute;
+    background-color: inherit;
+    transform: translateY(0);
+    font-family: "Nunito Sans",Arial,Helvetica,sans-serif;
+    transition: opacity 300ms ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.mainOtherHeader, .btVerticalHeaderTop {
+    z-index: 10002;
+}

@@ -1,0 +1,288 @@
+
+<div class="card border">
+    <div class="card-header border-bottom">
+        <div class="card-header-title"><h6><i class="fa fa-paw me-2"></i>Pet Detail</h6></div>
+    </div>
+    <div class="card-body">
+        <form #petForm="ngForm" (ngSubmit)="AddPet()">
+
+            <div class="row mt-2 justify-content-center">
+                
+                <!-- <div class="col-lg-6 col-sm-12">
+                    
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label class="form-label w-100">Pet Name <span class="text-danger">*</span></label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <input type="text" id="petName" name="petName" class="form-control form-control-sm" [(ngModel)]="pet.petName" #petName="ngModel" required  >
+                                        
+                                    </div>
+                                    <div *ngIf="petName.invalid && (petName.dirty || petName.touched)" class="text-danger">
+                                        <div *ngIf="petName.errors?.['required']">
+                                            Pet's name is required.
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-lg-auto">
+                                <label class="form-label w-100">Gender</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <select class="form-select form-select-sm" id="gender" name="gender" [(ngModel)]="pet.gender" #gender="ngModel">
+                                            <option value="Male" selected>Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-lg-auto">
+                                <label class="form-label w-100">Date of Birth</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <input type="text" id="dateOfBirth" bsDatepicker [bsConfig]="datePickerConfig" name="dateOfBirth" class="form-control form-control-sm" [(ngModel)]="pet.dateOfBirth" #dateOfBirth="ngModel" autocomplete="off"  >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>          
+            
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="form-label w-100">Species</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <select class="form-select form-select-sm" id="petSpeciesID" name="petSpeciesID" [(ngModel)]="pet.petSpeciesID" #petSpeciesID="ngModel" (change)="onSelectSpecies($event)">
+                                             <option default>--- Select Species ---</option>
+                                             <option *ngFor="let item of PetSpeciesList" [value]="item.petSpeciesID">{{item.petSpeciesNameEN}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-label w-100">Sub Species</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <select class="form-select form-select-sm" id="petSubSpeciesID" name="petSubSpeciesID" [(ngModel)]="pet.petSubSpeciesID" #petSubSpeciesID="ngModel" (change)="onSelectSubSpecies($event)">
+                                            <option default>--- Select Sub Species ---</option>
+                                             <option *ngFor="let item of PetSubSpeciesList" [value]="item.petSubSpeciesID">{{item.petSubSpeciesNameEN}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+            
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label class="form-label w-100">Breed Type</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <select class="form-select form-select-sm" id="petBreedID" name="petBreedID" [(ngModel)]="pet.petBreedID" #petBreedID="ngModel">
+                                            <option *ngFor="let item of PetBreedsList" [value]="item.petBreedID">{{item.petBreedNameEN}}</option>
+                                       </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="form-label w-100">Color</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <select class="form-select form-select-sm" id="petColorID" name="petColorID" [(ngModel)]="pet.petColorID" #petColorID="ngModel">
+                                             <option *ngFor="let item of PetColorsList" [value]="item.petColorID">{{item.petColorNameEN}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-label w-100">Size</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <select class="form-select form-select-sm" id="petSizeID" name="petSizeID" [(ngModel)]="pet.petSizeID" #petSizeID="ngModel">
+                                             <option *ngFor="let item of PetSizesList" [value]="item.petSizeID">{{item.petSizeNameEN}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+            
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="form-label w-100">Weight</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                       <input type="text" id="petWeight" name="petWeight" class="form-control form-control-sm" [(ngModel)]="pet.petWeight" #petWeight="ngModel">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-label w-100">Status</label>
+                                <div class=form-group>
+                                    <div class="input-group">
+                                        <select class="form-select form-select-sm" id="petStatus" name="petStatus" [(ngModel)]="pet.petStatus" #petStatus="ngModel">
+                                            <option value="Alive" selected>Alive</option>
+                                            <option value="Dead">Dead</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-lg-12">
+                                <label class="form-label w-100">Pet Image</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <ngx-dropzone (change)="onSelect($event)" 
+                                        [processDirectoryDrop]="true"
+                                         [multiple]="false"                                         
+                                          accept="image/*"
+                                           style="width:100%"
+                                           >
+                                            <ngx-dropzone-label>Upload Pet's Image</ngx-dropzone-label>
+                                            <ngx-dropzone-image-preview class="rounded-circle" ngProjectAs="ngx-dropzone-preview" [removable]="true" (removed)="onRemove($event)" *ngFor="let f of files" [file]="f">
+                                            </ngx-dropzone-image-preview>
+                                        </ngx-dropzone>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-lg-12">
+                             <div class="d-flex float-end justify-content-between">
+                            <button type="submit" class="btn btn-outline-success me-1"  [disabled]="!petForm.valid">Create</button>
+                            <a routerLink="/customer/pets" role="button" class="btn btn-outline-dark">Cancel</a>
+                        </div>   
+            
+                        </div>
+                        </div>
+            </div> -->
+            <div class="col-12 mb-3">
+                <label class="form-label" for="uploadfile-1">Upload your photo</label>
+                <div class="d-flex align-items-center">
+                    <label class="position-relative me-4">
+                      <span class="avatar avatar-xl">
+                        <img id="petImage" [src]="'data:image/png/jpg/jpeg;base64, '+ (pet.petImage || '')" class="avatar-img rounded-circle border border-white border-3 shadow" onerror="this.src='../../assets/images/profile.webp'"  />
+                      </span>
+                    </label>
+                    <label class="btn btn-sm btn-primary-soft mb-0" for="uploadfile-1">Change</label>
+                    <input type="file" id="uploadfile-1" class="form-control d-none" (change)="handleUpload($event);"  />
+                </div>
+            </div>
+
+             <div class="col-md-12">
+                <label class="form-label">Pet's Name</label>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input typte="text" class="form-control form-control-sm" id="petName" name="petName" [(ngModel)]="pet.petName" #petName="ngModel" />
+                    </div>
+                    <div *ngIf="petName.invalid && (petName.dirty || petName.touched)" class="text-danger">
+                        <div *ngIf="petName.errors?.['required']">
+                            Pet's name is required.
+                          </div>
+                    </div>
+                </div>
+             </div>
+
+             <div class="col-md-6">
+                <label class="form-label">Gender</label>
+                <div class="form-group">
+                    <div class="input-group">
+                        <select class="form-select form-select-sm" id="gender" name="gender" [(ngModel)]="pet.gender" #gender="ngModel">
+                            <option value="Male" selected>Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+             </div>
+
+             <div class="col-md-6">
+                <label class="form-label">Date of Birth</label>
+                <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" id="dateOfBirth" bsDatepicker [bsConfig]="datePickerConfig" name="dateOfBirth" class="form-control form-control-sm" [(ngModel)]="pet.dateOfBirth" #dateOfBirth="ngModel" autocomplete="off"  >
+                        </div>
+                </div>
+             </div>
+
+
+             <div class="col-md-6">
+                <label class="form-label w-100">Species</label>
+                <div class=form-group>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm" id="petSubSpeciesID" name="petSubSpeciesID" [(ngModel)]="pet.petSubSpeciesID" #petSubSpeciesID="ngModel" (change)="onSelectSubSpecies($event)">
+                            <option default>--- Select Species ---</option>
+                             <option *ngFor="let item of PetSubSpeciesList" [value]="item.petSubSpeciesID">{{item.petSubSpeciesNameEN}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label w-100">Breed Type</label>
+                <div class=form-group>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm" id="petBreedID" name="petBreedID" [(ngModel)]="pet.petBreedID" #petBreedID="ngModel">
+                            <option *ngFor="let item of PetBreedsList" [value]="item.petBreedID">{{item.petBreedNameEN}}</option>
+                       </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label w-100">Color</label>
+                <div class=form-group>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm" id="petColorID" name="petColorID" [(ngModel)]="pet.petColorID" #petColorID="ngModel">
+                             <option *ngFor="let item of PetColorsList" [value]="item.petColorID">{{item.petColorNameEN}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label w-100">Size</label>
+                <div class=form-group>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm" id="petSizeID" name="petSizeID" [(ngModel)]="pet.petSizeID" #petSizeID="ngModel">
+                             <option *ngFor="let item of PetSizesList" [value]="item.petSizeID">{{item.petSizeNameEN}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label w-100">Weight</label>
+                <div class=form-group>
+                    <div class="input-group">
+                       <input type="text" id="petWeight" name="petWeight" class="form-control form-control-sm" [(ngModel)]="pet.petWeight" #petWeight="ngModel">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label w-100">Status</label>
+                <div class=form-group>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm" id="petStatus" name="petStatus" [(ngModel)]="pet.petStatus" #petStatus="ngModel">
+                            <option value="Alive" selected>Alive</option>
+                            <option value="Dead">Dead</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-12">
+                 <div class="d-flex float-end justify-content-between">
+                <button type="submit" class="btn btn-outline-success me-1"  [disabled]="!petForm.valid">Create</button>
+                <a routerLink="/customer/pets" role="button" class="btn btn-outline-dark">Cancel</a>
+            </div> 
+            </div> 
+            </div>
+            </form>
+    </div>
+</div>
+
+

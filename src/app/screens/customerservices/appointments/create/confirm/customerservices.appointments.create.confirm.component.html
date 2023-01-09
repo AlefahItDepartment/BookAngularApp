@@ -1,0 +1,56 @@
+<div class="container mb-auto">
+
+         <div class="row">
+            <div class="col-lg-12">
+                <div class="card" *ngIf="!!appointmentConfirmData">
+                    <div class="card-body">
+
+                      <div class="row content-justify-center mb-1">
+                            <div class="col-lg-7"><strong class="text-success">Your appointment has been successfully created.</strong></div>
+                       </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Appointment Date</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.appointmentDate | date: 'dd/MM/yyyy hh:mm a'}}</label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Appointment No #</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.bookingNumber}}</label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Branch Name</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.branchNameEN}} </label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Branch Code</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.branchCode}} </label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Location</strong></div>
+                        <div class="col-lg-4"><label><a [href]="url" download="schedule.jpg"><qrcode [width]="100" (qrCodeURL)="onCodeChange($event)" [qrdata]="appointmentConfirmData.data.branch_Location"></qrcode></a></label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Address Line 1</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.branch_AddressLine1}} </label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Address Line 2</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.branch_AddressLine2}} </label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>Region</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.branch_RegionName}} </label></div>
+                      </div>
+                      <div class="row content-justify-center mb-1">
+                        <div class="col-lg-3"><strong>City</strong></div>
+                        <div class="col-lg-4"><label>{{appointmentConfirmData?.data?.branch_CityName}} </label></div>
+                      </div>
+                      <div class="row mt-5 content-justify-center mb-1">
+                        <div class="col-lg-7">
+                        <a routerLink="/customer/appointments" role="button" class="btn btn-md ms-2 btn-primary-soft"><span class="bi bi-box-arrow-left fa-fw me-2"></span> Go back to appointments</a>
+                        </div>
+                   </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+</div>
