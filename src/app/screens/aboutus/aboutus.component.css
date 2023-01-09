@@ -1,0 +1,11 @@
+.btTransparentLightHeader .mainHeader {
+
+    color:#000 !important;
+
+}
+
+.btHasAltLogo.btStickyHeaderActive.btMenuHorizontal.btTransparentLightHeader .mainHeader {
+
+   color:#000 !important;
+   background-color: #fff !important;
+}

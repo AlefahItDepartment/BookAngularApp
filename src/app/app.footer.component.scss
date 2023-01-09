@@ -1,0 +1,237 @@
+// .footer {
+
+
+//     -webkit-transition: transform 1s cubic-bezier(.230, 1, .320, 1), padding-top 300ms ease;
+//     -moz-transition: transform 1s cubic-bezier(.230, 1, .320, 1), padding-top 300ms ease;
+//     transition: transform 1s cubic-bezier(.230, 1, .320, 1), padding-top 300ms ease;
+
+
+
+//     .footer-content {
+
+//         position: relative;
+//         display: block;
+//         background-image: url('../assets/images/background_footer_02.jpg');
+//         color: #191919;
+//         background-color: #bcf3f8;
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+
+
+//         .footer-top-coverage-image {
+
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             left: 0;
+//             pointer-events: none;
+//         }
+
+
+//         .line-dots-image {
+
+//             top: 20%;
+//             left: -10%;
+//             position: absolute;
+
+//             .line-dots-image-image {
+
+//                 -webkit-transition: transform 1200ms ease-out;
+//                 -moz-transition: transform 1200ms ease-out;
+
+//                 -webkit-transform: translateY(0);
+//                 -moz-transform: translateY(0);
+//                 -ms-transform: translateY(0);
+//                 transform: translateY(0);
+//                 transition: transform 1200ms ease-out;
+
+//                 .bb-line-dots-image {
+
+//                     display: block;
+//                     overflow: hidden;
+
+//                 }
+
+//             }
+//         }
+
+
+//         .footer-logo {
+
+//             display: block;
+//             overflow: hidden;
+
+//             span {
+//                 display: block;
+//                 line-height: 0;
+//                 box-shadow: none;
+//             }
+
+//             img {
+//                 border-radius: 0;
+//                 display: block;
+//                 margin: 0;
+//                 line-height: 0;
+//                 max-width: 100%;
+//                 height: auto;
+//             }
+//         }
+
+
+//         .column-seperator {
+
+//             line-height: 0;
+//             display: block;
+//             clear: box;
+
+//         }
+
+
+//         .cb-icon {
+
+//             float: left;
+//             margin: 0;
+//             padding-right: 0.5em;
+//             padding-left: 0;
+//         }
+
+//         .column-bottom-icon {
+
+//             display: inline-block;
+//             -webkit-justify-content: center;
+//             -ms-flex-pack: center;
+//             justify-content: center;
+//             line-height: 1;
+//             padding-right: 0.5em;
+//             max-width: 100%;
+
+
+//             .column-bottom-icon-holder {
+
+//                 text-decoration: none !important;
+//                 -webkit-box-shadow: none !important;
+//                 box-shadow: none !important;
+//                 display: -ms-flexbox;
+//                 display: -webkit-flex;
+//                 display: flex;
+//                 -webkit-flex-flow: row nowrap;
+//                 -ms-flex-flow: row nowrap;
+//                 flex-flow: row nowrap;
+//                 -webkit-justify-content: flex-start;
+//                 -ms-flex-pack: start;
+//                 justify-content: flex-start;
+//                 -webkit-align-items: center;
+//                 -ms-flex-align: center;
+//                 align-items: center;
+//                 -webkit-align-content: center;
+//                 -ms-flex-line-pack: center;
+//                 align-content: center;
+//                 line-height: inherit;
+//                 font-weight: normal;
+//             }
+
+
+//             .column-bottom-icon-holder:before {
+
+//                 background-color: transparent;
+//                 box-shadow: 0 0 0 1px #191919 inset;
+//                 color: #191919;
+//                 border-radius: 50%;
+//                 font-size: 1.1em;
+//                 width: 2em;
+//                 height: 2em;
+
+
+//                 display: -ms-flexbox;
+//                 display: -webkit-flex;
+//                 display: flex;
+//                 -webkit-order: 1;
+//                 -ms-flex-order: 1;
+//                 order: 1;
+//                 line-height: normal;
+//                 -webkit-flex-flow: column nowrap;
+//                 -ms-flex-flow: column nowrap;
+//                 flex-flow: column nowrap;
+//                 -webkit-align-content: center;
+//                 -ms-flex-line-pack: center;
+//                 align-content: center;
+//                 -webkit-align-items: center;
+//                 -ms-flex-align: center;
+//                 align-items: center;
+//                 -webkit-justify-content: center;
+//                 -ms-flex-pack: center;
+//                 justify-content: center;
+//                 -webkit-transition: all 280ms ease;
+//                 -moz-transition: all 280ms ease;
+//                 transition: all 280ms ease;
+//             }
+
+
+
+//         }
+
+//         .column-bottom {
+
+//             padding-left:20px;
+//             padding-right:20px;
+//         }
+
+
+//         .column-bottom-spacing-extra-large {
+
+
+//             padding-bottom: 16em;
+//         }
+
+//         .column-bottom-spacing-large {
+
+
+//             padding-bottom: 8em;
+//         }
+
+//         .column-bottom-spacing-medium {
+
+
+//             padding-bottom: 4em;
+//         }
+
+//         .column-bottom-spacing-normal {
+
+
+//             padding-bottom: 2em;
+//         }
+
+//         .column-bottom-spacing-small {
+
+
+//             padding-bottom: 1em;
+//         }
+//     }
+
+
+//     div.quick-links-menu ul > li {
+
+//         margin-left:-25px !important;
+
+//     }
+
+//     .quick-links-menu ul li {
+
+
+//         list-style: none;
+//         line-height: 1;
+//         padding-bottom: 1em;
+//     }
+
+//     .quick-links-menu div ul li > a {
+
+//         color: inherit;
+//     font-size: .85em;
+//     font-weight: 600;
+
+//     }
+
+// }
+
+

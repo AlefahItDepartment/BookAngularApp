@@ -1,0 +1,104 @@
+<div class="container">
+
+      
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                   <li class="breadcrumb-item" aria-current="page"><a routerLink="/">Home</a></li>
+                   <li class="breadcrumb-item" aria-current="page">Admin</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <div class="row mt-3">
+        <div class="col-lg-3 mb-1">
+
+          <div class="card">
+            <div class="card-body wrapper">
+              <div class="d-flex flex-column flex-shrink-0 p-3 bg-white w-100">
+                <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                  <i class="bi-dashboard"></i>
+                  <span class="fs-4">Menu</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li class="nav-item">
+                    <a routerLink="/admin/dashboard" class="nav-link link-dark">
+                      <i class="fs-4 fa fa-dashboard"></i>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a routerLink="/admin/appointments" class="nav-link link-dark">
+                      <i class="fs-4 fa fa-calendar-o"></i>
+                      Appointments
+                    </a>
+                  </li>
+                  <li>
+                    <a routerLink="/admin/customers" class="nav-link link-dark">
+                        <i class="fs-4 fa fa-users"></i>
+                      Customers
+                    </a>
+                  </li>
+                  <li>
+                    <a routerLink="/admin/pets" class="nav-link link-dark">
+                        <i class="fs-4 fa fa-paw"></i>
+                      Pets
+                    </a>
+                  </li>
+                  <li>
+                    <a routerLink="/admin/branches" class="nav-link link-dark">
+                        <i class="fs-4 fa fa-building"></i>
+                      Branch
+                    </a>
+                  </li>
+                  <li>
+                    <a routerLink="/admin/staffs" class="nav-link link-dark">
+                        <i class="fs-4 fa fa-users"></i>
+                      Staffs
+                    </a>
+                  </li>
+                  <li>
+                    <a routerLink="/admin/servicetypes" class="nav-link link-dark">
+                        <i class="fs-4 bi bi-file-medical"></i>
+                      Service Types
+                    </a>
+                  </li>
+                  <li>
+                    <a routerLink="/admin/servicesubtypes" class="nav-link link-dark">
+                        <i class="fs-4 bi bi-journal-medical"></i>
+                      Service Sub Types
+                    </a>
+                  </li>
+                  <li>
+                    <a routerLink="/admin/profile" class="nav-link link-dark">
+                        <i class="fs-4 fa fa-user-o"></i>
+                      Profile
+                    </a>
+                  </li>                 
+                </ul>
+              </div>
+            </div>
+          </div>
+            
+
+        </div>
+        <div class="col-lg-9 mb-1">
+
+              <div class="card">
+                <div class="card-body wrapper">
+                  <router-outlet>
+
+                  </router-outlet>
+                </div>
+              </div>              
+
+        </div>
+    </div>
+      
+
+</div>

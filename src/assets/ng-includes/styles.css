@@ -1,0 +1,1584 @@
+select,
+input {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+input[type='submit'] {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+input[type='submit']:hover {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+    color: #bcf3f8;
+}
+
+.fancy-select ul.options li:hover {
+    color: #bcf3f8;
+}
+
+input:not([type='checkbox']):not([type='radio']):not([type='submit']):focus,
+textarea:focus,
+.fancy-select .trigger.open {
+    border: 1px solid #bcf3f8;
+}
+
+.btContent a {
+    color: #bcf3f8;
+}
+
+a:hover {
+    color: #bcf3f8;
+}
+
+.btText a {
+    color: #bcf3f8;
+}
+
+body {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+blockquote {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+blockquote:before {
+    color: #bcf3f8;
+}
+
+.btContentHolder table thead th {
+    background-color: #bcf3f8;
+}
+
+.btAccentDarkHeader .btPreloader .animation>div:first-child,
+.btLightAccentHeader .btPreloader .animation>div:first-child,
+.btTransparentLightHeader .btPreloader .animation>div:first-child {
+    background-color: #bcf3f8;
+}
+
+.btPreloader .animation .preloaderLogo {
+    height: 80px;
+}
+
+.btLoader:before {
+    background-color: #bcf3f8;
+    -webkit-box-shadow: 30px 0 0 #cfecbc;
+    box-shadow: 30px 0 0 #cfecbc;
+}
+
+.btLoader:after {
+    background-color: #ffbaa0;
+    -webkit-box-shadow: 30px 0 0 #faf4b6;
+    box-shadow: 30px 0 0 #faf4b6;
+}
+
+@-webkit-keyframes ball1 {
+    0% {
+        -webkit-box-shadow: 30px 0 0 #cfecbc;
+        box-shadow: 30px 0 0 #cfecbc;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 #cfecbc;
+        box-shadow: 0 0 0 #cfecbc;
+    }
+
+    100% {
+        -webkit-box-shadow: 30px 0 0 #cfecbc;
+        box-shadow: 30px 0 0 #cfecbc;
+    }
+}
+
+@-moz-keyframes ball1 {
+    0% {
+        box-shadow: 30px 0 0 #cfecbc;
+    }
+
+    50% {
+        box-shadow: 0 0 0 #cfecbc;
+    }
+
+    100% {
+        box-shadow: 30px 0 0 #cfecbc;
+    }
+}
+
+@keyframes ball1 {
+    0% {
+        -webkit-box-shadow: 30px 0 0 #cfecbc;
+        box-shadow: 30px 0 0 #cfecbc;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 #cfecbc;
+        box-shadow: 0 0 0 #cfecbc;
+    }
+
+    100% {
+        -webkit-box-shadow: 30px 0 0 #cfecbc;
+        box-shadow: 30px 0 0 #cfecbc;
+    }
+}
+
+@-webkit-keyframes ball2 {
+    0% {
+        -webkit-box-shadow: 30px 0 0 #faf4b6;
+        box-shadow: 30px 0 0 #faf4b6;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 #faf4b6;
+        box-shadow: 0 0 0 #faf4b6;
+    }
+
+    100% {
+        -webkit-box-shadow: 30px 0 0 #faf4b6;
+        box-shadow: 30px 0 0 #faf4b6;
+    }
+}
+
+@-moz-keyframes ball2 {
+    0% {
+        box-shadow: 30px 0 0 #faf4b6;
+    }
+
+    50% {
+        box-shadow: 0 0 0 #faf4b6;
+    }
+
+    100% {
+        box-shadow: 30px 0 0 #faf4b6;
+    }
+}
+
+@keyframes ball2 {
+    0% {
+        -webkit-box-shadow: 30px 0 0 #faf4b6;
+        box-shadow: 30px 0 0 #faf4b6;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 0 #faf4b6;
+        box-shadow: 0 0 0 #faf4b6;
+    }
+
+    100% {
+        -webkit-box-shadow: 30px 0 0 #faf4b6;
+        box-shadow: 30px 0 0 #faf4b6;
+    }
+}
+
+body.error404 .btErrorPage .port .bt_bb_button.bt_bb_style_outline a {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+body.error404 .btErrorPage .port .bt_bb_button.bt_bb_style_outline a:hover {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.btNoSearchResults .bt_bb_port #searchform input[type='submit'] {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.btNoSearchResults .bt_bb_port #searchform input[type='submit']:hover {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+    color: #bcf3f8;
+}
+
+.btNoSearchResults .bt_bb_port .bt_bb_button.bt_bb_style_filled a {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.btNoSearchResults .bt_bb_port .bt_bb_button.bt_bb_style_filled a:hover {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+    color: #bcf3f8;
+}
+
+.mainHeader {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.mainHeader a:hover {
+    color: #bcf3f8;
+}
+
+.btLightAccentHeader .mainHeader a:hover {
+    color: #ffbaa0;
+}
+
+.menuPort {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.menuPort nav ul li a:hover {
+    color: #bcf3f8;
+}
+
+.btLightAccentHeader .menuPort nav ul li a:hover {
+    color: #ffbaa0;
+}
+
+.menuPort nav>ul>li>a {
+    line-height: 80px;
+}
+
+.btTextLogo {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+    line-height: 80px;
+}
+
+.btLogoArea .logo img {
+    height: 80px;
+}
+
+.btTransparentDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:before,
+.btTransparentLightHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:before,
+.btAccentLightHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:before,
+.btAccentDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:before,
+.btLightDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:before,
+.btHasAltLogo.btStickyHeaderActive .btHorizontalMenuTrigger:hover .bt_bb_icon:before,
+.btTransparentDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:after,
+.btTransparentLightHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:after,
+.btAccentLightHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:after,
+.btAccentDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:after,
+.btLightDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon:after,
+.btHasAltLogo.btStickyHeaderActive .btHorizontalMenuTrigger:hover .bt_bb_icon:after {
+    border-top-color: #bcf3f8;
+}
+
+.btTransparentDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btTransparentLightHeader .btHorizontalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btAccentLightHeader .btHorizontalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btAccentDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btLightDarkHeader .btHorizontalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btHasAltLogo.btStickyHeaderActive .btHorizontalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
+    border-top-color: #bcf3f8;
+}
+
+.btMenuHorizontal .menuPort nav>ul>li>a:after {
+    background-color: #bcf3f8;
+}
+
+.btMenuHorizontal .menuPort nav>ul>li li.current-menu-ancestor>a,
+.btMenuHorizontal .menuPort nav>ul>li li.current-menu-item>a {
+    color: #bcf3f8;
+}
+
+.btMenuHorizontal .menuPort nav>ul>li.current-menu-ancestor li.current-menu-ancestor>a,
+.btMenuHorizontal .menuPort nav>ul>li.current-menu-ancestor li.current-menu-item>a,
+.btMenuHorizontal .menuPort nav>ul>li.current-menu-item li.current-menu-ancestor>a,
+.btMenuHorizontal .menuPort nav>ul>li.current-menu-item li.current-menu-item>a,
+.btMenuHorizontal .menuPort nav>ul>li.on li.current-menu-ancestor>a,
+.btMenuHorizontal .menuPort nav>ul>li.on li.current-menu-item>a {
+    color: #bcf3f8;
+}
+
+.btMenuHorizontal .menuPort nav>ul>li:not(.btMenuWideDropdown)>ul>li.menu-item-has-children>a:before {
+    background-color: #bcf3f8;
+}
+
+.btMenuHorizontal .menuPort ul ul li a:hover {
+    color: #bcf3f8;
+}
+
+body.btMenuHorizontal .subToggler {
+    line-height: 80px;
+}
+
+html:not(.touch) body.btMenuHorizontal .menuPort>nav>ul>li.btMenuWideDropdown>ul>li>a:after {
+    background-color: #bcf3f8;
+}
+
+.btMenuHorizontal .topBar .topBarPort .topTools .btIconWidget.btAccentIconWidget.btWidgetWithText .btIconWidgetTitle {
+    color: #bcf3f8;
+}
+
+.btMenuHorizontal .topBarInMenu {
+    height: 80px;
+}
+
+.btAccentLightHeader .btBelowLogoArea,
+.btAccentLightHeader .topBar {
+    background-color: #bcf3f8;
+}
+
+.btAccentLightHeader .btBelowLogoArea a:hover,
+.btAccentLightHeader .topBar a:hover {
+    color: #ffbaa0;
+}
+
+.btAccentDarkHeader .btBelowLogoArea,
+.btAccentDarkHeader .topBar {
+    background-color: #bcf3f8;
+}
+
+.btAccentDarkHeader .btBelowLogoArea a:hover,
+.btAccentDarkHeader .topBar a:hover {
+    color: #ffbaa0;
+}
+
+.btLightAccentHeader .btLogoArea,
+.btLightAccentHeader .btVerticalHeaderTop {
+    background-color: #bcf3f8;
+}
+
+.btLightAccentHeader .btBelowLogoArea a:hover,
+.btLightAccentHeader .topBar a:hover {
+    color: #bcf3f8;
+}
+
+.btLightAccentHeader.btMenuHorizontal.btBelowMenu .mainHeader .btLogoArea {
+    background-color: #bcf3f8;
+}
+
+.btStickyHeaderActive.btMenuHorizontal .mainHeader .btLogoArea .logo img {
+    height: -webkit-calc(80px*0.8);
+    height: -moz-calc(80px*0.8);
+    height: calc(80px*0.8);
+}
+
+.btStickyHeaderActive.btMenuHorizontal .mainHeader .btLogoArea .btTextLogo {
+    line-height: -webkit-calc(80px*0.8);
+    line-height: -moz-calc(80px*0.8);
+    line-height: calc(80px*0.8);
+}
+
+.btStickyHeaderActive.btMenuHorizontal .mainHeader .btLogoArea .menuPort nav>ul>li>a,
+.btStickyHeaderActive.btMenuHorizontal .mainHeader .btLogoArea .menuPort nav>ul>li>.subToggler {
+    line-height: -webkit-calc(80px*0.8);
+    line-height: -moz-calc(80px*0.8);
+    line-height: calc(80px*0.8);
+}
+
+.btStickyHeaderActive.btMenuHorizontal .mainHeader .btLogoArea .topBarInMenu {
+    height: -webkit-calc(80px*0.8);
+    height: -moz-calc(80px*0.8);
+    height: calc(80px*0.8);
+}
+
+.btTransparentDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon:before,
+.btTransparentLightHeader .btVerticalMenuTrigger:hover .bt_bb_icon:before,
+.btAccentLightHeader .btVerticalMenuTrigger:hover .bt_bb_icon:before,
+.btAccentDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon:before,
+.btLightDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon:before,
+.btHasAltLogo.btStickyHeaderActive .btVerticalMenuTrigger:hover .bt_bb_icon:before,
+.btTransparentDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon:after,
+.btTransparentLightHeader .btVerticalMenuTrigger:hover .bt_bb_icon:after,
+.btAccentLightHeader .btVerticalMenuTrigger:hover .bt_bb_icon:after,
+.btAccentDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon:after,
+.btLightDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon:after,
+.btHasAltLogo.btStickyHeaderActive .btVerticalMenuTrigger:hover .bt_bb_icon:after {
+    border-top-color: #bcf3f8;
+}
+
+.btTransparentDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btTransparentLightHeader .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btAccentLightHeader .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btAccentDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btLightDarkHeader .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before,
+.btHasAltLogo.btStickyHeaderActive .btVerticalMenuTrigger:hover .bt_bb_icon .bt_bb_icon_holder:before {
+    border-top-color: #bcf3f8;
+}
+
+.btMenuVertical .mainHeader .btCloseVertical:before:hover {
+    color: #bcf3f8;
+}
+
+.btMenuHorizontal .topBarInLogoArea {
+    height: 80px;
+}
+
+.btMenuHorizontal .topBarInLogoArea .topBarInLogoAreaCell {
+    border: 0 solid #bcf3f8;
+}
+
+.btMenuVertical .mainHeader .btCloseVertical:before:hover {
+    color: #bcf3f8;
+}
+
+.btDarkSkin .btSiteFooterCopyMenu .port:before,
+.btLightSkin .btDarkSkin .btSiteFooterCopyMenu .port:before,
+.btDarkSkin.btLightSkin .btDarkSkin .btSiteFooterCopyMenu .port:before {
+    background-color: #bcf3f8;
+}
+
+.btContent .btArticleHeadline .bt_bb_headline a:hover {
+    color: #bcf3f8;
+}
+
+.btPostSingleItemStandard .btArticleShareEtc>div.btReadMoreColumn .bt_bb_button a {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.btPostSingleItemStandard .btArticleShareEtc>div.btReadMoreColumn .bt_bb_button:hover a {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+.btMediaBox.btQuote:before,
+.btMediaBox.btLink:before {
+    background-color: #bcf3f8;
+}
+
+.sticky.btArticleListItem .btArticleHeadline h1 .bt_bb_headline_content span a:after,
+.sticky.btArticleListItem .btArticleHeadline h2 .bt_bb_headline_content span a:after,
+.sticky.btArticleListItem .btArticleHeadline h3 .bt_bb_headline_content span a:after,
+.sticky.btArticleListItem .btArticleHeadline h4 .bt_bb_headline_content span a:after,
+.sticky.btArticleListItem .btArticleHeadline h5 .bt_bb_headline_content span a:after,
+.sticky.btArticleListItem .btArticleHeadline h6 .bt_bb_headline_content span a:after,
+.sticky.btArticleListItem .btArticleHeadline h7 .bt_bb_headline_content span a:after,
+.sticky.btArticleListItem .btArticleHeadline h8 .bt_bb_headline_content span a:after {
+    color: #bcf3f8;
+}
+
+.post-password-form p:first-child {
+    color: #ffbaa0;
+}
+
+.post-password-form p:nth-child(2) input[type="submit"] {
+    background: #bcf3f8;
+}
+
+.btPagination {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.btPagination .paging a:hover {
+    color: #bcf3f8;
+}
+
+.btPagination .paging a:hover:after {
+    border-color: #bcf3f8;
+    color: #bcf3f8;
+}
+
+.btPrevNextNav .btPrevNext .btPrevNextItem .btPrevNextTitle {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.btPrevNextNav .btPrevNext .btPrevNextItem .btPrevNextDir {
+    color: #bcf3f8;
+}
+
+.btPrevNextNav .btPrevNext:hover .btPrevNextTitle {
+    color: #bcf3f8;
+}
+
+.btArticleCategories a:hover {
+    color: #bcf3f8;
+}
+
+.btArticleCategories a:not(:first-child):before {
+    background-color: #bcf3f8;
+}
+
+.btArticleAuthor a:hover {
+    color: #bcf3f8;
+}
+
+.btArticleComments:hover {
+    color: #bcf3f8;
+}
+
+.bt-comments-box .vcard .posted {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt-comments-box .commentTxt p.edit-link,
+.bt-comments-box .commentTxt p.reply {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt-comments-box .comment-navigation a,
+.bt-comments-box .comment-navigation span {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.comment-awaiting-moderation {
+    color: #bcf3f8;
+}
+
+a#cancel-comment-reply-link {
+    color: #bcf3f8;
+}
+
+a#cancel-comment-reply-link:hover {
+    color: #ffbaa0;
+}
+
+.btCommentSubmit {
+    color: #bcf3f8;
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+.btCommentSubmit:hover {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.sidebar .widget_bt_bb_recent_posts ul li a:hover,
+.btSidebar .widget_bt_bb_recent_posts ul li a:hover,
+.btSiteFooterWidgets .widget_bt_bb_recent_posts ul li a:hover {
+    color: #bcf3f8;
+}
+
+.sidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h1,
+.sidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h2,
+.sidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h3,
+.sidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h4,
+.sidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h5,
+.sidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h6,
+.btSidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h1,
+.btSidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h2,
+.btSidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h3,
+.btSidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h4,
+.btSidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h5,
+.btSidebar .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h6,
+.btSiteFooterWidgets .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h1,
+.btSiteFooterWidgets .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h2,
+.btSiteFooterWidgets .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h3,
+.btSiteFooterWidgets .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h4,
+.btSiteFooterWidgets .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h5,
+.btSiteFooterWidgets .widget_bt_bb_recent_posts ul li .btImageTextWidget .btImageTextWidgetText .bt_bb_headline h6 {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+body:not(.btNoDashInSidebar) .btBox>h4:after,
+body:not(.btNoDashInSidebar) .btCustomMenu>h4:after,
+body:not(.btNoDashInSidebar) .btTopBox>h4:after {
+    border-bottom: 3px solid #bcf3f8;
+}
+
+.btBox ul li.current-menu-item>a,
+.btCustomMenu ul li.current-menu-item>a,
+.btTopBox ul li.current-menu-item>a {
+    color: #bcf3f8;
+}
+
+.widget_calendar table caption {
+    background: #bcf3f8;
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.widget_calendar table tbody tr td#today {
+    color: #bcf3f8;
+}
+
+.widget_rss li a.rsswidget {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.widget_shopping_cart .total {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.widget_shopping_cart .total .amount {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.widget_shopping_cart .total strong {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.widget_shopping_cart .buttons .button {
+    background: #bcf3f8;
+}
+
+.widget_shopping_cart .widget_shopping_cart_content .mini_cart_item .ppRemove a.remove {
+    background-color: #bcf3f8;
+}
+
+.widget_shopping_cart .widget_shopping_cart_content .mini_cart_item .ppRemove a.remove:hover {
+    background-color: #ffbaa0;
+}
+
+.menuPort .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon .bt_bb_icon .bt_bb_icon_holder:before,
+.topTools .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon .bt_bb_icon .bt_bb_icon_holder:before,
+.topBarInLogoArea .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon .bt_bb_icon .bt_bb_icon_holder:before {
+    color: #bcf3f8;
+}
+
+.btAccentLightHeader .menuPort .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon .bt_bb_icon .bt_bb_icon_holder:before,
+.btAccentLightHeader .topTools .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon .bt_bb_icon .bt_bb_icon_holder:before,
+.btAccentLightHeader .topBarInLogoArea .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon .bt_bb_icon .bt_bb_icon_holder:before {
+    color: #ffbaa0;
+}
+
+.menuPort .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents,
+.topTools .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents,
+.topBarInLogoArea .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetIcon span.cart-contents {
+    background-color: #ffbaa0;
+    font: normal .9em/1.5 "Nunito Sans";
+}
+
+.btMenuVertical .menuPort .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetInnerContent .verticalMenuCartToggler,
+.btMenuVertical .topTools .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetInnerContent .verticalMenuCartToggler,
+.btMenuVertical .topBarInLogoArea .widget_shopping_cart .widget_shopping_cart_content .btCartWidgetInnerContent .verticalMenuCartToggler {
+    background-color: #bcf3f8;
+}
+
+.widget_recent_reviews {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.widget_price_filter .price_slider_wrapper .ui-slider .ui-slider-handle {
+    background-color: #bcf3f8;
+}
+
+.btBox .tagcloud a,
+.btTags ul a {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.topTools a.btIconWidget:hover,
+.topBarInMenu a.btIconWidget:hover {
+    color: #bcf3f8;
+}
+
+.btLightAccentHeader .topTools a.btIconWidget:hover,
+.btLightAccentHeader .topBarInMenu a.btIconWidget:hover {
+    color: #ffbaa0;
+}
+
+.btAccentLightHeader .topTools a.btIconWidget:hover,
+.btAccentLightHeader .topBarInMenu a.btIconWidget:hover {
+    color: #ffbaa0;
+}
+
+.btAccentIconWidget.btIconWidget .btIconWidgetIcon {
+    color: #bcf3f8;
+}
+
+.btLightAccentHeader .btAccentIconWidget.btIconWidget .btIconWidgetIcon {
+    color: #ffbaa0;
+}
+
+.btAccentLightHeader .btAccentIconWidget.btIconWidget .btIconWidgetIcon {
+    color: #ffbaa0;
+}
+
+a.btAccentIconWidget.btIconWidget:hover {
+    color: #bcf3f8;
+}
+
+.btLightAccentHeader a.btAccentIconWidget.btIconWidget:hover {
+    color: #ffbaa0;
+}
+
+.btAccentLightHeader a.btAccentIconWidget.btIconWidget:hover {
+    color: #ffbaa0;
+}
+
+.btLightSkin .btSiteFooterWidgets .btSearch button:hover,
+.btDarkSkin .btLightSkin .btSiteFooterWidgets .btSearch button:hover,
+.btLightSkin .btDarkSkin .btLightSkin .btSiteFooterWidgets .btSearch button:hover,
+.btDarkSkin .btSiteFooterWidgets .btSearch button:hover,
+.btLightSkin .btDarkSkin .btSiteFooterWidgets .btSearch button:hover,
+.btDarkSkin.btLightSkin .btDarkSkin .btSiteFooterWidgets .btSearch button:hover,
+.btLightSkin .btSidebar .btSearch button:hover,
+.btDarkSkin .btLightSkin .btSidebar .btSearch button:hover,
+.btLightSkin .btDarkSkin .btLightSkin .btSidebar .btSearch button:hover,
+.btDarkSkin .btSidebar .btSearch button:hover,
+.btLightSkin .btDarkSkin .btSidebar .btSearch button:hover,
+.btDarkSkin.btLightSkin .btDarkSkin .btSidebar .btSearch button:hover,
+.btLightSkin .btSidebar .widget_product_search button:hover,
+.btDarkSkin .btLightSkin .btSidebar .widget_product_search button:hover,
+.btLightSkin .btDarkSkin .btLightSkin .btSidebar .widget_product_search button:hover,
+.btDarkSkin .btSidebar .widget_product_search button:hover,
+.btLightSkin .btDarkSkin .btSidebar .widget_product_search button:hover,
+.btDarkSkin.btLightSkin .btDarkSkin .btSidebar .widget_product_search button:hover {
+    background: #bcf3f8 !important;
+    border-color: #bcf3f8 !important;
+}
+
+.btSearchInner.btFromTopBox .btSearchInnerClose .bt_bb_icon a.bt_bb_icon_holder {
+    color: #bcf3f8;
+}
+
+.btSearchInner.btFromTopBox .btSearchInnerClose .bt_bb_icon:hover a.bt_bb_icon_holder {
+    color: #77e7f1;
+}
+
+.btSearchInner.btFromTopBox button:hover:before {
+    color: #bcf3f8;
+}
+
+div.btButtonWidget a.btButtonWidgetLink .btIconWidgetText {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+div.btButtonWidget a {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+div.btButtonWidget a .btIconWidgetIcon {
+    background: #bcf3f8;
+}
+
+div.btButtonWidget a:hover {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+div.btButtonWidget a:hover .btIconWidgetIcon {
+    border-color: #bcf3f8;
+}
+
+.btTransparentLightHeader:not(.btStickyHeaderActive):not(.btStickyHeaderOpen) div.btButtonWidget a:hover .btIconWidgetIcon {
+    border-color: #bcf3f8;
+}
+
+div.btButtonWidget.btOutline a {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+div.btButtonWidget.btOutline a .btIconWidgetIcon {
+    background: #bcf3f8;
+}
+
+div.btButtonWidget.btOutline a:hover {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.bt_bb_headline .bt_bb_headline_superheadline {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_headline.bt_bb_subheadline .bt_bb_headline_subheadline {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_headline h1 strong,
+.bt_bb_headline h2 strong,
+.bt_bb_headline h3 strong,
+.bt_bb_headline h4 strong,
+.bt_bb_headline h5 strong,
+.bt_bb_headline h6 strong {
+    color: #bcf3f8;
+}
+
+.bt_bb_headline h1 em,
+.bt_bb_headline h2 em,
+.bt_bb_headline h3 em,
+.bt_bb_headline h4 em,
+.bt_bb_headline h5 em,
+.bt_bb_headline h6 em {
+    color: #ffbaa0;
+}
+
+.bt_bb_button .bt_bb_button_text {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_button.bt_bb_style_underline a:hover {
+    border-color: #bcf3f8;
+    color: #bcf3f8;
+}
+
+.bt_bb_service .bt_bb_service_colored_icon svg .cls-1 {
+    fill: #bcf3f8;
+}
+
+.bt_bb_service .bt_bb_service_colored_icon svg line.cls-1,
+.bt_bb_service .bt_bb_service_colored_icon svg rect.cls-1 {
+    stroke: #bcf3f8;
+}
+
+.bt_bb_service .bt_bb_service_content .bt_bb_service_content_title {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_title_size_huge.bt_bb_service .bt_bb_service_content .bt_bb_service_content_title {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_service:hover .bt_bb_service_content_title a {
+    color: #bcf3f8;
+}
+
+.bt_bb_icon .bt_bb_icon_holder_inner svg .cls-1 {
+    fill: #bcf3f8;
+}
+
+.bt_bb_icon .bt_bb_icon_holder_inner svg line.cls-1,
+.bt_bb_icon .bt_bb_icon_holder_inner svg rect.cls-1 {
+    stroke: #bcf3f8;
+}
+
+.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_supertitle {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_title {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_colored_icon svg .cls-1 {
+    fill: #bcf3f8;
+}
+
+.bt_bb_price_list .bt_bb_price_list_price {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_media .bt_bb_latest_posts_item_date {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+    background: #ffbaa0;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_media .bt_bb_latest_posts_item_date span,
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_media .bt_bb_latest_posts_item_date div {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_meta .bt_bb_latest_posts_item_category ul.post-categories:before {
+    color: #bcf3f8;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_meta .bt_bb_latest_posts_item_author:before {
+    color: #bcf3f8;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_meta .bt_bb_latest_posts_item_comments:before {
+    color: #bcf3f8;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_meta a:hover {
+    color: #bcf3f8;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_title {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_content .bt_bb_latest_posts_item_title a:hover {
+    color: #bcf3f8;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item:nth-child(2) .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_media .bt_bb_latest_posts_item_date {
+    background: #cfecbc;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item:nth-child(3) .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_media .bt_bb_latest_posts_item_date {
+    background: #faf4b6;
+}
+
+.bt_bb_latest_posts .bt_bb_latest_posts_item:nth-child(4) .bt_bb_latest_posts_item_inner .bt_bb_latest_posts_item_media .bt_bb_latest_posts_item_date {
+    background: #bcf3f8;
+}
+
+.bt_bb_masonry_post_grid .bt_bb_post_grid_filter .bt_bb_post_grid_filter_item.active,
+.bt_bb_masonry_post_grid .bt_bb_post_grid_filter .bt_bb_post_grid_filter_item:hover {
+    color: #bcf3f8;
+}
+
+.bt_bb_masonry_post_grid .bt_bb_grid_item .bt_bb_grid_item_inner .bt_bb_grid_item_date_box:before {
+    color: #bcf3f8;
+}
+
+.bt_bb_masonry_post_grid .bt_bb_grid_item .bt_bb_grid_item_inner .bt_bb_grid_item_date_box span {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+    color: #ffbaa0;
+}
+
+.bt_bb_masonry_post_grid .bt_bb_grid_item .bt_bb_grid_item_inner .bt_bb_grid_item_post_content .bt_bb_grid_item_meta a:hover {
+    color: #bcf3f8;
+}
+
+.bt_bb_masonry_post_grid .bt_bb_grid_item .bt_bb_grid_item_inner .bt_bb_grid_item_post_content .bt_bb_grid_item_meta .bt_bb_grid_item_category ul.post-categories li a:hover {
+    color: #bcf3f8;
+}
+
+.bt_bb_masonry_post_grid .bt_bb_grid_item .bt_bb_grid_item_inner .bt_bb_grid_item_post_content .bt_bb_grid_item_post_title a:hover {
+    color: #bcf3f8;
+}
+
+.bt_bb_masonry_post_grid .bt_bb_post_grid_loader {
+    border-top: .4em solid #bcf3f8;
+}
+
+.bt_bb_style_line.bt_bb_progress_bar .bt_bb_progress_bar_content:after {
+    -webkit-box-shadow: 0 0 0 5px #bcf3f8 inset;
+    box-shadow: 0 0 0 5px #bcf3f8 inset;
+}
+
+.slick-dots li {
+    background: #bcf3f8;
+}
+
+.bt_bb_countdown.btCounterHolder {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_countdown.btCounterHolder span[class$="_text"] {
+    color: #bcf3f8;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_accordion .bt_bb_accordion_item .bt_bb_accordion_item_title_content .bt_bb_icon .bt_bb_icon_holder:before {
+    -webkit-box-shadow: 0 0 0 3em #ffbaa0 inset;
+    box-shadow: 0 0 0 3em #ffbaa0 inset;
+}
+
+.bt_bb_icon_style_outline.bt_bb_accordion .bt_bb_accordion_item .bt_bb_accordion_item_title_content .bt_bb_icon .bt_bb_icon_holder:before {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+.bt_bb_icon_style_borderless.bt_bb_accordion .bt_bb_accordion_item .bt_bb_accordion_item_title_content .bt_bb_icon .bt_bb_icon_holder:before {
+    -webkit-box-shadow: 0 0 0 0 #bcf3f8 inset !important;
+    box-shadow: 0 0 0 0 #bcf3f8 inset !important;
+}
+
+.bt_bb_accordion .bt_bb_accordion_item .bt_bb_accordion_item_title_content .bt_bb_accordion_item_title {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_organic_animation_fill.bt_bb_organic_animation .item .item__deco {
+    fill: #ffbaa0;
+}
+
+.bt_bb_organic_animation_fill_accent.bt_bb_organic_animation .item .item__deco {
+    fill: #bcf3f8;
+}
+
+.bt_bb_organic_animation_stroke.bt_bb_organic_animation .item .item__deco {
+    stroke: #ffbaa0;
+}
+
+.bt_bb_organic_animation_stroke_accent.bt_bb_organic_animation .item .item__deco {
+    stroke: #bcf3f8;
+}
+
+.bt_bb_organic_animation .item .item__meta .item__subtitle {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_organic_animation .item .item__meta .item__button_text {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 480px) {
+    .bt_bb_style_filled.bt_bb_organic_animation .item .item__meta .item__button_text a {
+        -webkit-box-shadow: 0 0 0 0 #bcf3f8 inset !important;
+        box-shadow: 0 0 0 0 #bcf3f8 inset !important;
+    }
+}
+
+.bt_bb_card .bt_bb_card_content .bt_bb_card_colored_icon svg .cls-1 {
+    fill: #bcf3f8;
+}
+
+.bt_bb_card .bt_bb_card_content .bt_bb_card_title {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_card .bt_bb_card_content .bt_bb_card_title strong {
+    color: #bcf3f8;
+}
+
+.bt_bb_progress_bar_advanced .bt_bb_progress_bar_advanced_content span {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_progress_bar_advanced .bt_bb_progress_bar_advanced_bar_text span {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_progress_bar_advanced .bt_bb_progress_bar_advanced_colored_icon svg .cls-1 {
+    fill: #bcf3f8;
+}
+
+a .bt_bb_progress_bar_advanced .progressbar-text {
+    color: #bcf3f8;
+}
+
+.bt_bb_single_product .bt_bb_single_product_image .bt_bb_single_product_image_content .bt_bb_single_product_price_cart .add_to_cart_inline a.add_to_cart_button {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    background-color: #bcf3f8;
+}
+
+.bt_bb_single_product .bt_bb_single_product_content .bt_bb_single_product_title {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_single_product .bt_bb_single_product_content .bt_bb_single_product_price {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_menu_item .bt_bb_menu_item_title_price .bt_bb_menu_item_title span {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_menu_item .bt_bb_menu_item_title_price .bt_bb_menu_item_price span {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_menu_item .bt_bb_menu_item_description span {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.bt_bb_before_after_image .bt_bb_before_after_image-horizontal .bt_bb_before_after_image-handle:hover {
+    background: #bcf3f8;
+}
+
+.bt_bb_before_after_image .bt_bb_before_after_image-container.active .bt_bb_before_after_image-handle {
+    background: #bcf3f8;
+}
+
+.bt_bb_before_after_image .bt_bb_before_after_image_block {
+    background: #bcf3f8;
+}
+
+.bt_bb_before_after_image .bt_bb_before_after_image_block .bt_bb_before_after_image_headline {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #bcf3f8;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #bcf3f8;
+}
+
+.btLight.btNewsletter .btNewsletterColumn input[type='email'] {
+    border-color: #bcf3f8;
+}
+
+.btAccent.btNewsletter .btNewsletterButton input[type='submit'] {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.btAccent.btNewsletter .btNewsletterButton input[type='submit']:hover {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+    color: #bcf3f8;
+}
+
+.btAlternate.btNewsletter .btNewsletterButton input[type='submit'] {
+    -webkit-box-shadow: 0 0 0 3em #ffbaa0 inset;
+    box-shadow: 0 0 0 3em #ffbaa0 inset;
+}
+
+.btAlternate.btNewsletter .btNewsletterButton input[type='submit']:hover {
+    -webkit-box-shadow: 0 0 0 2px #ffbaa0 inset;
+    box-shadow: 0 0 0 2px #ffbaa0 inset;
+}
+
+.btContactForm.btCocoForm .btContactColumn input:focus,
+.btContactForm.btCocoForm .btContactColumn textarea:focus,
+.btContactForm.btCocoForm .btContactColumn .trigger:focus {
+    border: 1px solid #bcf3f8 !important;
+}
+
+.btContactForm.btBella .btContactColumn input:focus,
+.btContactForm.btBella .btContactColumn textarea:focus,
+.btContactForm.btBella .btContactColumn .trigger:focus {
+    border: 1px solid #bcf3f8 !important;
+}
+
+.products ul li.product .btWooShopLoopItemInner .bt_bb_headline .bt_bb_headline_content a:hover,
+.products li.product .btWooShopLoopItemInner .bt_bb_headline .bt_bb_headline_content a:hover {
+    color: #bcf3f8;
+}
+
+.products ul li.product .btWooShopLoopItemInner .added:after,
+.products ul li.product .btWooShopLoopItemInner .loading:after,
+.products li.product .btWooShopLoopItemInner .added:after,
+.products li.product .btWooShopLoopItemInner .loading:after {
+    background-color: #bcf3f8;
+}
+
+.products ul li.product .btWooShopLoopItemInner .added_to_cart:hover,
+.products li.product .btWooShopLoopItemInner .added_to_cart:hover {
+    color: #bcf3f8;
+}
+
+.products ul li.product .onsale,
+.products li.product .onsale {
+    background: #ffbaa0;
+}
+
+nav.woocommerce-pagination ul li a:focus,
+nav.woocommerce-pagination ul li a:hover,
+nav.woocommerce-pagination ul li a.next,
+nav.woocommerce-pagination ul li a.prev,
+nav.woocommerce-pagination ul li span.current {
+    color: #bcf3f8;
+}
+
+div.product .onsale {
+    background: #ffbaa0;
+}
+
+div.product div.images .woocommerce-product-gallery__trigger:after {
+    -webkit-box-shadow: 0 0 0 2em #bcf3f8 inset, 0 0 0 2em rgba(255, 255, 255, .5) inset;
+    box-shadow: 0 0 0 2em #bcf3f8 inset, 0 0 0 2em rgba(255, 255, 255, .5) inset;
+}
+
+div.product div.images .woocommerce-product-gallery__trigger:hover:after {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset, 0 0 0 2em rgba(255, 255, 255, .5) inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset, 0 0 0 2em rgba(255, 255, 255, .5) inset;
+    color: #bcf3f8;
+}
+
+div.product div.summary .price {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+table.shop_table .coupon .input-text {
+    color: #bcf3f8;
+}
+
+table.shop_table td.product-remove a.remove {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+table.shop_table td.product-remove a.remove:hover {
+    -webkit-box-shadow: 0 0 0 3em #ffbaa0 inset;
+    box-shadow: 0 0 0 3em #ffbaa0 inset;
+}
+
+ul.wc_payment_methods li .about_paypal {
+    color: #bcf3f8;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+    border-bottom: 2px solid #bcf3f8;
+}
+
+.btDarkSkin .woocommerce-error,
+.btLightSkin .btDarkSkin .woocommerce-error,
+.btDarkSkin.btLightSkin .btDarkSkin .woocommerce-error,
+.btDarkSkin .woocommerce-info,
+.btLightSkin .btDarkSkin .woocommerce-info,
+.btDarkSkin.btLightSkin .btDarkSkin .woocommerce-info,
+.btDarkSkin .woocommerce-message,
+.btLightSkin .btDarkSkin .woocommerce-message,
+.btDarkSkin.btLightSkin .btDarkSkin .woocommerce-message {
+    border-top: 4px solid #bcf3f8;
+}
+
+.woocommerce-info a:not(.button),
+.woocommerce-message a:not(.button) {
+    color: #bcf3f8;
+}
+
+.woocommerce-message:before,
+.woocommerce-info:before {
+    color: #bcf3f8;
+}
+
+.woocommerce .btSidebar a.button,
+.woocommerce .btContent a.button,
+.woocommerce-page .btSidebar a.button,
+.woocommerce-page .btContent a.button,
+.woocommerce .btSidebar input[type="submit"],
+.woocommerce .btContent input[type="submit"],
+.woocommerce-page .btSidebar input[type="submit"],
+.woocommerce-page .btContent input[type="submit"],
+.woocommerce .btSidebar button[type="submit"],
+.woocommerce .btContent button[type="submit"],
+.woocommerce-page .btSidebar button[type="submit"],
+.woocommerce-page .btContent button[type="submit"],
+.woocommerce .btSidebar input.button,
+.woocommerce .btContent input.button,
+.woocommerce-page .btSidebar input.button,
+.woocommerce-page .btContent input.button,
+.woocommerce .btSidebar input.alt:hover,
+.woocommerce .btContent input.alt:hover,
+.woocommerce-page .btSidebar input.alt:hover,
+.woocommerce-page .btContent input.alt:hover,
+.woocommerce .btSidebar a.button.alt:hover,
+.woocommerce .btContent a.button.alt:hover,
+.woocommerce-page .btSidebar a.button.alt:hover,
+.woocommerce-page .btContent a.button.alt:hover,
+.woocommerce .btSidebar .button.alt:hover,
+.woocommerce .btContent .button.alt:hover,
+.woocommerce-page .btSidebar .button.alt:hover,
+.woocommerce-page .btContent .button.alt:hover,
+.woocommerce .btSidebar button.alt:hover,
+.woocommerce .btContent button.alt:hover,
+.woocommerce-page .btSidebar button.alt:hover,
+.woocommerce-page .btContent button.alt:hover,
+div.woocommerce a.button,
+div.woocommerce input[type="submit"],
+div.woocommerce button[type="submit"],
+div.woocommerce input.button,
+div.woocommerce input.alt:hover,
+div.woocommerce a.button.alt:hover,
+div.woocommerce .button.alt:hover,
+div.woocommerce button.alt:hover {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.woocommerce .btSidebar a.button,
+.woocommerce .btContent a.button,
+.woocommerce-page .btSidebar a.button,
+.woocommerce-page .btContent a.button,
+.woocommerce .btSidebar input[type="submit"],
+.woocommerce .btContent input[type="submit"],
+.woocommerce-page .btSidebar input[type="submit"],
+.woocommerce-page .btContent input[type="submit"],
+.woocommerce .btSidebar button[type="submit"],
+.woocommerce .btContent button[type="submit"],
+.woocommerce-page .btSidebar button[type="submit"],
+.woocommerce-page .btContent button[type="submit"],
+.woocommerce .btSidebar input.button,
+.woocommerce .btContent input.button,
+.woocommerce-page .btSidebar input.button,
+.woocommerce-page .btContent input.button,
+.woocommerce .btSidebar input.alt:hover,
+.woocommerce .btContent input.alt:hover,
+.woocommerce-page .btSidebar input.alt:hover,
+.woocommerce-page .btContent input.alt:hover,
+.woocommerce .btSidebar a.button.alt:hover,
+.woocommerce .btContent a.button.alt:hover,
+.woocommerce-page .btSidebar a.button.alt:hover,
+.woocommerce-page .btContent a.button.alt:hover,
+.woocommerce .btSidebar .button.alt:hover,
+.woocommerce .btContent .button.alt:hover,
+.woocommerce-page .btSidebar .button.alt:hover,
+.woocommerce-page .btContent .button.alt:hover,
+.woocommerce .btSidebar button.alt:hover,
+.woocommerce .btContent button.alt:hover,
+.woocommerce-page .btSidebar button.alt:hover,
+.woocommerce-page .btContent button.alt:hover,
+div.woocommerce a.button,
+div.woocommerce input[type="submit"],
+div.woocommerce button[type="submit"],
+div.woocommerce input.button,
+div.woocommerce input.alt:hover,
+div.woocommerce a.button.alt:hover,
+div.woocommerce .button.alt:hover,
+div.woocommerce button.alt:hover {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.woocommerce .btSidebar a.button:hover,
+.woocommerce .btContent a.button:hover,
+.woocommerce-page .btSidebar a.button:hover,
+.woocommerce-page .btContent a.button:hover,
+.woocommerce .btSidebar input[type="submit"]:hover,
+.woocommerce .btContent input[type="submit"]:hover,
+.woocommerce-page .btSidebar input[type="submit"]:hover,
+.woocommerce-page .btContent input[type="submit"]:hover,
+.woocommerce .btSidebar button[type="submit"]:hover,
+.woocommerce .btContent button[type="submit"]:hover,
+.woocommerce-page .btSidebar button[type="submit"]:hover,
+.woocommerce-page .btContent button[type="submit"]:hover,
+.woocommerce .btSidebar input.button:hover,
+.woocommerce .btContent input.button:hover,
+.woocommerce-page .btSidebar input.button:hover,
+.woocommerce-page .btContent input.button:hover,
+.woocommerce .btSidebar input.alt,
+.woocommerce .btContent input.alt,
+.woocommerce-page .btSidebar input.alt,
+.woocommerce-page .btContent input.alt,
+.woocommerce .btSidebar a.button.alt,
+.woocommerce .btContent a.button.alt,
+.woocommerce-page .btSidebar a.button.alt,
+.woocommerce-page .btContent a.button.alt,
+.woocommerce .btSidebar .button.alt,
+.woocommerce .btContent .button.alt,
+.woocommerce-page .btSidebar .button.alt,
+.woocommerce-page .btContent .button.alt,
+.woocommerce .btSidebar button.alt,
+.woocommerce .btContent button.alt,
+.woocommerce-page .btSidebar button.alt,
+.woocommerce-page .btContent button.alt,
+div.woocommerce a.button:hover,
+div.woocommerce input[type="submit"]:hover,
+div.woocommerce button[type="submit"]:hover,
+div.woocommerce input.button:hover,
+div.woocommerce input.alt,
+div.woocommerce a.button.alt,
+div.woocommerce .button.alt,
+div.woocommerce button.alt {
+    color: #bcf3f8;
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+.star-rating span:before {
+    color: #bcf3f8;
+}
+
+p.stars a[class^="star-"].active:after,
+p.stars a[class^="star-"]:hover:after {
+    color: #bcf3f8;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+    background-color: #bcf3f8;
+}
+
+p.out-of-stock {
+    color: #bcf3f8;
+}
+
+.btQuoteBooking .btContactNext {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    color: #bcf3f8;
+    -webkit-box-shadow: 0 0 0 1px #bcf3f8 inset;
+    box-shadow: 0 0 0 1px #bcf3f8 inset;
+}
+
+.btQuoteBooking .btContactNext:hover {
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.btQuoteBooking .btQuoteSwitch.on .btQuoteSwitchInner {
+    background: #bcf3f8;
+}
+
+.btQuoteBooking textarea:focus,
+.btQuoteBooking input[type="text"]:focus,
+.btQuoteBooking input[type="email"]:focus,
+.btQuoteBooking input[type="password"]:focus,
+.btQuoteBooking .fancy-select .trigger:focus,
+.btQuoteBooking .ddcommon.borderRadius .ddTitleText:focus,
+.btQuoteBooking .ddcommon.borderRadiusTp .ddTitleText:focus,
+.btQuoteBooking .ddcommon.borderRadiusBtm .ddTitleText:focus {
+    border: 1px solid #bcf3f8;
+}
+
+.btQuoteBooking .btQuoteItem textarea:focus {
+    border: 1px solid #bcf3f8;
+}
+
+.btQuoteBooking .btQuoteItem label {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+.btQuoteBooking .dd.ddcommon.borderRadiusTp .ddTitleText,
+.btQuoteBooking .dd.ddcommon.borderRadiusBtm .ddTitleText {
+    -webkit-box-shadow: 5px 0 0 #bcf3f8 inset, 0 2px 10px rgba(0, 0, 0, .2);
+    box-shadow: 5px 0 0 #bcf3f8 inset, 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.btQuoteBooking .ui-slider .ui-slider-handle {
+    background: #bcf3f8;
+}
+
+.btQuoteBooking .btQuoteBookingForm .btQuoteTotal {
+    background: #bcf3f8;
+}
+
+.btQuoteBooking .btQuoteContact .btQuoteItem .btContactFieldMandatory.btContactFieldError input,
+.btQuoteBooking .btQuoteContact .btQuoteItem .btContactFieldMandatory.btContactFieldError textarea {
+    border-color: #bcf3f8;
+}
+
+.btQuoteBooking .btQuoteContact .btQuoteItem .btContactFieldMandatory.btContactFieldError textarea.btContactMessage {
+    -webkit-box-shadow: 0 0 0 1px #bcf3f8 inset !important;
+    box-shadow: 0 0 0 1px #bcf3f8 inset !important;
+    border-color: #bcf3f8 !important;
+}
+
+.btQuoteBooking .btQuoteContact .btQuoteItem .btContactFieldMandatory.btContactFieldError .dd.ddcommon.borderRadius .ddTitleText {
+    -webkit-box-shadow: 0 0 0 2px #bcf3f8 inset;
+    box-shadow: 0 0 0 2px #bcf3f8 inset;
+}
+
+.btQuoteBooking .btSubmitMessage {
+    color: #bcf3f8;
+}
+
+.btQuoteBooking .dd.ddcommon.borderRadiusTp .ddTitleText,
+.btQuoteBooking .btQuoteBooking .dd.ddcommon.borderRadiusBtm .ddTitleText {
+    border: 1px solid #bcf3f8;
+}
+
+.btQuoteBooking .btContactSubmit {
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 0 0 0 3em #bcf3f8 inset;
+    box-shadow: 0 0 0 3em #bcf3f8 inset;
+}
+
+.btQuoteBooking .btContactSubmit:hover {
+    color: #bcf3f8;
+    -webkit-box-shadow: 0 0 0 1px #bcf3f8 inset;
+    box-shadow: 0 0 0 1px #bcf3f8 inset;
+}
+
+.bt_cc_email_confirmation_container [type="checkbox"]:not(:checked)+label:before,
+.bt_cc_email_confirmation_container [type="checkbox"]:checked+label:before {
+    border: 2px solid #bcf3f8;
+}
+
+.btDatePicker .ui-datepicker-header {
+    background-color: #bcf3f8;
+}
+
+.bt_bb_cost_calculator .bt_bb_cost_calculator_total {
+    background-color: #bcf3f8;
+}
+
+.bt_bb_cost_calculator .bt_bb_cost_calculator_total .bt_bb_cost_calculator_total_text {
+    background-color: #bcf3f8;
+}
+
+.btQuoteBooking.btPetBoard .btQuoteItem .btQuoteSlider {
+    background: #bcf3f8;
+}
+
+.btLuxBoard.btQuoteBooking.btPetBoard .btQuoteItem .btQuoteSlider {
+    background: #ffbaa0;
+}
+
+.btQuoteBooking.btPetBoard .btQuoteItem .ui-slider .ui-slider-handle {
+    background: #ffbaa0;
+}
+
+.btLuxBoard.btQuoteBooking.btPetBoard .btQuoteItem .ui-slider .ui-slider-handle {
+    background: #bcf3f8;
+}
+
+.btLuxBoard.btQuoteBooking.btPetBoard .btQuoteBookingForm .btQuoteTotal {
+    color: #bcf3f8;
+}
+
+.btQuoteBooking.btPetBoard .btQuoteBookingForm .btQuoteTotal .btQuoteTotalText {
+    color: #bcf3f8;
+}
+
+.btQuoteBooking.btPetBoard .btQuoteBookingForm .btQuoteTotal .btQuoteTotalCurrency {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+.btQuoteBooking.btPetBoard .btQuoteBookingForm .btQuoteTotal .btQuoteTotalCalc {
+    /* font-family: "Pacifico", Arial, Helvetica, sans-serif; */
+    font-family: "Cairo", Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Dripicons";
+    src: url(../fonts/Dripicons.woff) format("woff"), url(../fonts/Dripicons.ttf) format("truetype");
+}
+
+*[data-ico-dripicons]:before {
+    font-family: Dripicons;
+    content: attr(data-ico-dripicons);
+}
+
+/* @font-face {
+    font-family: "Essential";
+    src: url(../fonts/Essential.woff) format("woff"), url(../fonts/Essential.ttf) format("truetype");
+} */
+
+*[data-ico-essential]:before {
+    font-family: Essential;
+    content: attr(data-ico-essential);
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url(../fonts/FontAwesome.otf) format("woff"), url(../fonts/FontAwesome.ttf) format("truetype");
+}
+
+*[data-ico-fontawesome]:before {
+    font-family: FontAwesome;
+    content: attr(data-ico-fontawesome);
+}
+
+ @font-face {
+    font-family: "FontAwesome5Brands";
+    src: url(../fonts/FontAwesome5Brands.woff) format("woff"), url(../fonts/FontAwesome5Brands.ttf) format("truetype");
+} 
+
+*[data-ico-fontawesome5brands]:before {
+    font-family: FontAwesome5Brands;
+    content: attr(data-ico-fontawesome5brands);
+}
+
+@font-face {
+    font-family: "Icon7Stroke";
+    src: url(../fonts/Icon7Stroke.woff) format("woff"), url(../fonts/Icon7Stroke.ttf) format("truetype");
+}
+
+*[data-ico-icon7stroke]:before {
+    font-family: Icon7Stroke;
+    content: attr(data-ico-icon7stroke);
+}
+
+@font-face {
+    font-family: "Paws";
+    src: url(../fonts/Paws.woff) format("woff"), url(../fonts/Paws.ttf) format("truetype");
+}
+
+*[data-ico-paws]:before {
+    font-family: Paws;
+    content: attr(data-ico-paws);
+}
+
+@font-face {
+    font-family: "Pawsitive";
+    src: url(../fonts/Pawsitive.woff) format("woff"), url(../fonts/Pawsitive.ttf) format("truetype");
+}
+
+*[data-ico-pawsitive]:before {
+    font-family: Pawsitive;
+    content: attr(data-ico-pawsitive);
+}
+
+@font-face {
+    font-family: "Pets";
+    src: url(../fonts/Pets.woff) format("woff"), url(../fonts/Pets.ttf) format("truetype");
+}
+
+*[data-ico-pets]:before {
+    font-family: Pets;
+    content: attr(data-ico-pets);
+}

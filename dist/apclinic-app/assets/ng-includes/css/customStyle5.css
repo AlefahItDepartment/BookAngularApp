@@ -1,0 +1,404 @@
+
+            .bt_bb_color_scheme_5.bt_bb_headline {
+                color: #191919;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_headline .bt_bb_headline_superheadline {
+                    color: #bcf3f8;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon a {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon:hover a {
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_outline .bt_bb_icon_holder:before {
+                background-color: transparent;
+                box-shadow: 0 0 0 1px #191919 inset;
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_outline:hover .bt_bb_icon_holder:before {
+                background-color: #191919;
+                box-shadow: 0 0 0 1em #191919 inset;
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_filled .bt_bb_icon_holder:before {
+                box-shadow: 0 0 0 1em #bcf3f8 inset;
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_filled:hover .bt_bb_icon_holder:before {
+                box-shadow: 0 0 0 1px #bcf3f8 inset;
+                background-color: #191919;
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_borderless .bt_bb_icon_holder:before {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_borderless:hover .bt_bb_icon_holder:before {
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_icon .bt_bb_icon_holder .bt_bb_icon_holder_inner svg .cls-2 {
+                fill: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_icon .bt_bb_icon_holder .bt_bb_icon_holder_inner svg line.cls-2, .bt_bb_colored_icon_color_scheme_5.bt_bb_icon .bt_bb_icon_holder .bt_bb_icon_holder_inner svg rect.cls-2 {
+                stroke: #191919;
+                fill: none !important;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_icon .bt_bb_icon_holder .bt_bb_icon_holder_inner svg .cls-1 {
+                fill: #bcf3f8;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_icon .bt_bb_icon_holder .bt_bb_icon_holder_inner svg line.cls-1, .bt_bb_colored_icon_color_scheme_5.bt_bb_icon .bt_bb_icon_holder .bt_bb_icon_holder_inner svg rect.cls-1 {
+                stroke: #bcf3f8;
+                fill: none !important;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_outline a {
+                box-shadow: 0 0 0 2px #bcf3f8 inset;
+                color: #191919;
+                background-color: transparent;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_outline a:hover {
+                    box-shadow: 0 0 0 3em #bcf3f8 inset;
+                    color: #191919;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_filled a {
+                box-shadow: 0 0 0 3em #bcf3f8 inset;
+                color: #191919;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_filled a:hover {
+                    box-shadow: 0 0 0 2px #bcf3f8 inset;
+                    color: #bcf3f8;
+                    background-color: transparent;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_clean a, .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_borderless a {
+                color: #191919;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_clean a:hover, .bt_bb_color_scheme_5.bt_bb_icon.bt_bb_style_borderless:hover a {
+                    color: #bcf3f8;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_underline a {
+                border-color: #191919;
+                color: #191919;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_button.bt_bb_style_underline a:hover {
+                    border-color: #bcf3f8;
+                    color: #bcf3f8;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_progress_bar.bt_bb_style_line .bt_bb_progress_bar_content:after {
+                box-shadow: 0 0 0 5px #bcf3f8 inset;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_supertitle {
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_title {
+                color: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_colored_icon svg .cls-2 {
+                fill: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_colored_icon svg rect.cls-2, .bt_bb_colored_icon_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_colored_icon svg line.cls-2 {
+                fill: none !important;
+                stroke: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_colored_icon svg .cls-1 {
+                fill: #bcf3f8;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_colored_icon svg line.cls-1, .bt_bb_colored_icon_color_scheme_5.bt_bb_price_list .bt_bb_price_list_content .bt_bb_price_list_colored_icon svg rect.cls-1 {
+                stroke: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_section {
+                color: #191919;
+                background-color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_outline.bt_bb_service .bt_bb_icon_holder {
+                box-shadow: 0 0 0 1px #191919 inset;
+                color: #191919;
+                background-color: transparent;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_outline.bt_bb_service:hover .bt_bb_icon_holder {
+                box-shadow: 0 0 0 3em #191919 inset;
+                background-color: #191919;
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_filled.bt_bb_service .bt_bb_icon_holder {
+                box-shadow: 0 0 0 3em #bcf3f8 inset;
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_filled.bt_bb_service:hover .bt_bb_icon_holder {
+                box-shadow: 0 0 0 2px #bcf3f8 inset;
+                background-color: transparent;
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_borderless.bt_bb_service .bt_bb_icon_holder {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_borderless.bt_bb_service:hover .bt_bb_icon_holder {
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_title_color_scheme_5.bt_bb_service .bt_bb_service_content .bt_bb_service_content_title {
+                color: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_service .bt_bb_service_colored_icon svg .cls-2 {
+                fill: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_service .bt_bb_service_colored_icon svg line.cls-2, .bt_bb_colored_icon_color_scheme_5.bt_bb_service .bt_bb_service_colored_icon svg rect.cls-2 {
+                fill: none !important;
+                stroke: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_service .bt_bb_service_colored_icon svg .cls-1 {
+                fill: #bcf3f8;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_service .bt_bb_service_colored_icon svg line.cls-1, .bt_bb_colored_icon_color_scheme_5.bt_bb_service .bt_bb_service_colored_icon svg rect.cls-1 {
+                fill: none !important;
+                stroke: #bcf3f8;
+            }
+    
+            .bt_bb_dots_color_scheme_5.bt_bb_content_slider .slick-dots li {
+                background: #191919;
+            }
+    
+                .bt_bb_dots_color_scheme_5.bt_bb_content_slider .slick-dots li.slick-active, .bt_bb_dots_color_scheme_5.bt_bb_content_slider .slick-dots li:hover {
+                    background: #bcf3f8;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_outline .bt_bb_tabs_header li.bt_bb_tab_title {
+                border-color: #191919;
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_outline.bt_bb_tabs .bt_bb_tabs_tabs .bt_bb_tab_item .bt_bb_tab_content {
+                border-color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_outline .bt_bb_tabs_header li.bt_bb_tab_title:hover, .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_outline .bt_bb_tabs_header li.bt_bb_tab_title.on {
+                color: #191919;
+                border-color: #bcf3f8;
+                background-color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_filled .bt_bb_tabs_header li.bt_bb_tab_title.on, .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_filled .bt_bb_tabs_header li.bt_bb_tab_title:hover {
+                color: #191919;
+                background-color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_filled .bt_bb_tabs_tabs .bt_bb_tab_content {
+                background-color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_filled ul.bt_bb_tabs_header li.bt_bb_tab_title:not(.on) {
+                background-color: #191919;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_tabs.bt_bb_style_filled ul.bt_bb_tabs_header li.bt_bb_tab_title:not(.on):hover {
+                    background-color: #bcf3f8;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_style_simple .bt_bb_tabs_header li {
+                color: #bcf3f8;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_style_simple .bt_bb_tabs_header li.on {
+                    color: #191919;
+                    border-color: #191919;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion .bt_bb_accordion_item {
+                border-color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_outline .bt_bb_accordion_item_title {
+                border-color: #191919;
+                color: #191919;
+                background-color: transparent;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_outline .bt_bb_accordion_item {
+                border-color: #bcf3f8;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_outline .bt_bb_accordion_item.on, .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_outline .bt_bb_accordion_item:hover {
+                    background-color: #bcf3f8;
+                }
+    
+                    .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_outline .bt_bb_accordion_item.on .bt_bb_accordion_item_title, .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_outline .bt_bb_accordion_item .bt_bb_accordion_item_title:hover {
+                        color: #191919;
+                        background-color: #191919;
+                    }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_filled .bt_bb_accordion_item .bt_bb_accordion_item_title {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_filled .bt_bb_accordion_item:before {
+                color: #191919;
+                box-shadow: 0 0 0 1px #191919 inset;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_filled .bt_bb_accordion_item {
+                background-color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion .bt_bb_accordion_item {
+                border-color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_filled .bt_bb_accordion_item.on .bt_bb_accordion_item_title, .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_filled .bt_bb_accordion_item .bt_bb_accordion_item_title:hover {
+                color: #191919;
+                background-color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_simple .bt_bb_accordion_item .bt_bb_accordion_item_title {
+                color: #191919;
+                border-color: #191919;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_simple .bt_bb_accordion_item .bt_bb_accordion_item_title:hover, .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_simple .bt_bb_accordion_item.on .bt_bb_accordion_item_title {
+                    color: #bcf3f8;
+                    border-color: #bcf3f8;
+                }
+    
+                .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_simple .bt_bb_accordion_item .bt_bb_accordion_item_title:hover, .bt_bb_color_scheme_5.bt_bb_accordion.bt_bb_style_simple .bt_bb_accordion_item.on .bt_bb_accordion_item_title {
+                    color: #bcf3f8;
+                    border-color: #bcf3f8;
+                }
+    
+            .bt_bb_icons_color_scheme_5.bt_bb_accordion .bt_bb_accordion_item.btWithIcon .bt_bb_accordion_item_title_content .bt_bb_icon .bt_bb_icon_holder:before {
+                color: #191919;
+                box-shadow: 0 0 0 3em #bcf3f8 inset;
+            }
+    
+            .bt_bb_icons_color_scheme_5.bt_bb_accordion.bt_bb_icon_style_borderless .bt_bb_accordion_item.btWithIcon .bt_bb_accordion_item_title_content .bt_bb_icon .bt_bb_icon_holder:before {
+                color: #191919;
+                box-shadow: 0 0 0 0px #bcf3f8 inset;
+            }
+    
+            .bt_bb_icons_color_scheme_5.bt_bb_accordion.bt_bb_icon_style_outline .bt_bb_accordion_item.btWithIcon .bt_bb_accordion_item_title_content .bt_bb_icon .bt_bb_icon_holder:before {
+                color: #191919;
+                box-shadow: 0 0 0 2px #bcf3f8 inset;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_colored_icon svg .cls-2 {
+                fill: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_colored_icon svg line.cls-2, .bt_bb_colored_icon_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_colored_icon svg rect.cls-2 {
+                fill: none !important;
+                stroke: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_colored_icon svg .cls-1 {
+                fill: #bcf3f8;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_colored_icon svg line.cls-1, .bt_bb_colored_icon_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_colored_icon svg rect.cls-1 {
+                fill: none !important;
+                stroke: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_title {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_card .bt_bb_card_content .bt_bb_card_icon {
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_title_color_scheme_5.bt_bb_progress_bar_advanced .bt_bb_progress_bar_advanced_content span {
+                color: #191919;
+            }
+    
+            .bt_bb_title_color_scheme_5.bt_bb_progress_bar_advanced span.bt_bb_icon_holder {
+                color: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_progress_bar_advanced .container .bt_bb_progress_bar_advanced_colored_icon svg .cls-2 {
+                fill: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_progress_bar_advanced .container .bt_bb_progress_bar_advanced_colored_icon svg line.cls-2, .bt_bb_colored_icon_color_scheme_5.bt_bb_progress_bar_advanced .container .bt_bb_progress_bar_advanced_colored_icon svg rect.cls-2 {
+                fill: none !important;
+                stroke: #191919;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_progress_bar_advanced .container .bt_bb_progress_bar_advanced_colored_icon svg .cls-1 {
+                fill: #bcf3f8;
+            }
+    
+            .bt_bb_colored_icon_color_scheme_5.bt_bb_progress_bar_advanced .container .bt_bb_progress_bar_advanced_colored_icon svg line.cls-1, .bt_bb_colored_icon_color_scheme_5.bt_bb_progress_bar_advanced .container .bt_bb_progress_bar_advanced_colored_icon svg rect.cls-1 {
+                fill: none !important;
+                stroke: #bcf3f8;
+            }
+    
+            .bt_bb_icon_color_scheme_5.bt_bb_organic_animation .item .item__meta .item__icon .bt_bb_icon_holder svg .cls-2 {
+                fill: #191919;
+            }
+    
+            .bt_bb_icon_color_scheme_5.bt_bb_organic_animation .item .item__meta .item__icon .bt_bb_icon_holder svg .cls-1 {
+                fill: #bcf3f8;
+            }
+    
+            .bt_bb_title_color_scheme_5.bt_bb_organic_animation .item .item__meta .item__meta_inner .item__title {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_single_product .bt_bb_single_product_content .bt_bb_single_product_title {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_single_product .bt_bb_single_product_content .bt_bb_single_product_price {
+                color: #bcf3f8;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_menu_item .bt_bb_menu_item_title_price .bt_bb_menu_item_title {
+                color: #191919;
+            }
+    
+                .bt_bb_color_scheme_5.bt_bb_menu_item .bt_bb_menu_item_title_price .bt_bb_menu_item_title:after {
+                    color: #bcf3f8;
+                }
+    
+            .bt_bb_color_scheme_5.bt_bb_countdown.btCounterHolder .btCountdownHolder {
+                color: #191919;
+            }
+    
+            .bt_bb_color_scheme_5.bt_bb_countdown.btCounterHolder .days_text, .bt_bb_color_scheme_5.bt_bb_countdown.btCounterHolder .hours_text, .bt_bb_color_scheme_5.bt_bb_countdown.btCounterHolder .minutes_text, .bt_bb_color_scheme_5.bt_bb_countdown.btCounterHolder .seconds_text {
+                color: #bcf3f8;
+            }
